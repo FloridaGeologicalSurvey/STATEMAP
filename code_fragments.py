@@ -5,7 +5,7 @@ Created on Tue May 20 10:49:39 2014
 @author: Bassett_s
 """
 import csv, arcpy
-ss = r"C:\PythonData\Clint2"
+ss = r"C:\PythonWorkspace\STATEMAP\SUMMARY"
 
 def readHeader(filePath):
     with open(filePath, 'rb') as f:
@@ -134,8 +134,8 @@ for i in masterList:
 #Arcpy code run in ArcCatalog interpreter
 import arcpy, csv
 from arcpy import env
-workspacePath = r"C:\GISData\Sinkhole Project\Clint_TOR.gdb"
-arcpy.CreateTable_management(workspacePath, "ClintTable")
+workspacePath = r"C:\GISData\Sinkhole Project\CleanOFMS.gdb"
+arcpy.CreateTable_management(workspacePath, "OFMSTable")
 
 ClintTable = r"C:\GISData\Sinkhole Project\Clint_TOR.gdb\ClintTable"
 bad = r"C:\PythonData\ClintSourcesBad.txt"
